@@ -1,5 +1,7 @@
 # Dep
 
+[![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
+
 > built with [probot](https://github.com/probot/probot)
 
 A dependency manager for your Pull Requests.
