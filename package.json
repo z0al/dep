@@ -7,21 +7,21 @@
 	"repository": "https://github.com/ahmed-taj/dep.git",
 	"scripts": {
 		"start": "probot run ./index.js",
-		"test": "jest && standard"
+		"test": "jest"
 	},
 	"dependencies": {
-		"probot": "^3.0.0"
+		"probot": "^3.0.0",
+		"probot-commands": "^1.0.0"
 	},
 	"devDependencies": {
 		"jest": "^21.2.1",
-		"localtunnel": "^1.8.2",
-		"standard": "^10.0.3"
+		"localtunnel": "^1.8.2"
 	},
 	"engines": {
 		"node": ">= 8",
 		"npm": ">= 5"
 	},
-	"standard": {
-		"env": ["jest"]
+	"jest": {
+		"testRegex": "((\\.|/)(test|spec))\\.js$"
 	}
 }
