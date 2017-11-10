@@ -6,6 +6,7 @@
   "license": "MIT",
   "repository": "https://github.com/ahmed-taj/dep.git",
   "scripts": {
+    "format": "prettier-standard '**/*.js'",
     "precommit": "lint-staged",
     "start": "probot run ./index.js",
     "test": "jest"
@@ -30,6 +31,6 @@
     "*.json": ["prettier --write", "git add"]
   },
   "jest": {
-    "testRegex": "((\\.|/)(test|spec))\\.js$"
+    "testRegex": "\\.test\\.js$"
   }
 }
