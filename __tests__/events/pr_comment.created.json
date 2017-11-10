@@ -4,11 +4,6 @@
     "action": "created",
     "issue": {
       "number": 1,
-      "title": "test PR",
-      "user": {
-        "login": "user"
-      },
-      "labels": [{ "name": "help wanted" }, { "name": "bug" }],
       "state": "open",
       "pull_request": {}
     },

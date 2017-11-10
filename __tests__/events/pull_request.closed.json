@@ -1,0 +1,19 @@
+{
+  "event": "pull_request",
+  "payload": {
+    "action": "closed",
+    "pull_request": {
+      "number": 1,
+      "state": "closed"
+    },
+    "repository": {
+      "name": "test",
+      "owner": {
+        "login": "user"
+      }
+    },
+    "installation": {
+      "id": 1234
+    }
+  }
+}

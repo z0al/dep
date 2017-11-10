@@ -1,16 +1,10 @@
 {
-  "event": "issue_comment",
+  "event": "issues",
   "payload": {
-    "action": "created",
+    "action": "reopened",
     "issue": {
       "number": 1,
       "state": "open"
-    },
-    "comment": {
-      "user": {
-        "login": "user"
-      },
-      "body": "/ensure #1 and #2 are resolved first"
     },
     "repository": {
       "name": "test",
