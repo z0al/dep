@@ -1,4 +1,5 @@
 // Packages
+const metadata = require('probot-metadata')
 const { createRobot } = require('probot')
 
 // Ours
@@ -20,7 +21,8 @@ beforeEach(() => {
   // Mock GitHub client
   github = {
     issues: {
-      addLabels: jest.fn()
+      addLabels: jest.fn(),
+      removeLabel: jest.fn()
     }
   }
 
@@ -28,22 +30,33 @@ beforeEach(() => {
   robot.auth = () => Promise.resolve(github)
 })
 
-test('processing PR comments', async () => {
-  await robot.receive(events.pr_comment_created)
-  expect(github.issues.addLabels).toBeCalled()
-})
-
 test('processing plain issue comments', async () => {
   await robot.receive(events.issue_comment_created)
   expect(github.issues.addLabels).not.toBeCalled()
 })
 
-test('adding labels', async () => {
+test('adding metadata', async () => {
   await robot.receive(events.pr_comment_created)
-  expect(github.issues.addLabels).toBeCalledWith({
-    labels: ['needs[1]', 'needs[2]'],
-    owner: 'user',
-    repo: 'test',
-    number: 1
-  })
+  expect(metadata).toBeCalledWith(
+    expect.objectContaining({ payload: expect.any(Object) })
+  )
+  expect(metadata().set).toBeCalledWith('dependencies', expect.any(Array))
+})
+
+test('adding markder', async () => {
+  await robot.receive(events.pr_comment_created)
+  expect(github.issues.addLabels).toBeCalledWith(
+    expect.objectContaining({
+      owner: 'user',
+      repo: 'test',
+      number: 1,
+      labels: expect.any(Array)
+    })
+  )
+})
+
+test('removing markder', async () => {
+  await robot.receive(events.pr_comment_created_remove)
+  expect(github.issues.removeLabel).toBeCalled()
+  expect(github.issues.addLabels).not.toBeCalled()
 })
