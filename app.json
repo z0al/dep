@@ -1,7 +1,8 @@
 {
   "env": {
     "PRIVATE_KEY": {
-      "description": "the private key you downloaded when creating the GitHub App"
+      "description":
+        "the private key you downloaded when creating the GitHub App"
     },
     "APP_ID": {
       "description": "the ID of your GitHub App"
