@@ -32,6 +32,12 @@ See [docs/deploy.md](./docs/deploy.md) if you would like to run your own instanc
 
 Give it a star(:star:) :point_up_2:
 
+## Credits
+
+The Logo is designed by [Freepik](https://www.freepik.com/free-vector/green-and-blue-retro-robots-collection_721192.htm). Modified by [Ahmed T. Ali](https://github.com/ahmed-taj).
+
+Special thanks to [Jason Etcovitch](https://github.com/JasonEtco) for their help, including the original bot idea.
+
 ## License
 
 MIT © [Ahmed T. Ali](https://github.com/ahmed-taj)
