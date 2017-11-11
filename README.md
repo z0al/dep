@@ -6,7 +6,11 @@
 
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
 
-> built with [probot](https://github.com/probot/probot)
+<center>
+  <img src="./docs/logo.png" width="256" height="256" alt="bot logo">
+</center>
+
+> built with [probot](https://github.com/probot/probot) framework
 
 A dependency manager for your Pull Requests.
 
@@ -22,7 +26,7 @@ npm start
 
 ## Deployment
 
-See [docs/deploy.md](docs/deploy.md) if you would like to run your own instance of this app.
+See [docs/deploy.md](./docs/deploy.md) if you would like to run your own instance of this app.
 
 ## Like it?
 
