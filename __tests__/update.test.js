@@ -1,3 +1,5 @@
+jest.mock('../lib/check')
+
 // Packages
 const metadata = require('probot-metadata')
 const { createRobot } = require('probot')
@@ -5,9 +7,10 @@ const { createRobot } = require('probot')
 // Ours
 const app = require('../index')
 const events = require('./events')
+const check = require('../lib/check')
 
 // Globals
-let robot, github
+let robot, github, owner, repo, sha, deps
 
 // Mock everything
 beforeEach(() => {
@@ -37,15 +40,38 @@ beforeEach(() => {
 
   // Passes the mocked out GitHub API into out robot instance
   robot.auth = () => Promise.resolve(github)
+
+  // Constants
+  owner = 'user'
+  repo = 'test'
+  sha = '123'
+  deps = [1, 2, 3]
 })
 
 test('getting stored metadata', async () => {
-  await robot.receive(events.pull_request_opened)
+  await robot.receive(events.issues_closed)
+  expect(metadata().get).toHaveBeenCalledWith('dependencies')
+
+  await robot.receive(events.issues_reopened)
+  expect(metadata().get).toHaveBeenCalledWith('dependencies')
+
+  await robot.receive(events.pull_request_closed)
   expect(metadata().get).toHaveBeenCalledWith('dependencies')
 
   await robot.receive(events.pull_request_reopened)
-  expect(metadata().get).toHaveBeenLastCalledWith('dependencies')
+  expect(metadata().get).toHaveBeenCalledWith('dependencies')
+})
 
-  await robot.receive(events.pull_request_synchronize)
-  expect(metadata().get).toHaveBeenLastCalledWith('dependencies')
+test('re-checking the status', async () => {
+  await robot.receive(events.issues_closed)
+  expect(check).toHaveBeenCalledWith(expect.any(Object), owner, repo, sha, deps)
+
+  await robot.receive(events.issues_reopened)
+  expect(check).toHaveBeenCalledWith(expect.any(Object), owner, repo, sha, deps)
+
+  await robot.receive(events.pull_request_closed)
+  expect(check).toHaveBeenCalledWith(expect.any(Object), owner, repo, sha, deps)
+
+  await robot.receive(events.pull_request_reopened)
+  expect(check).toHaveBeenCalledWith(expect.any(Object), owner, repo, sha, deps)
 })

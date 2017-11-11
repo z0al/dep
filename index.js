@@ -4,6 +4,7 @@ const command = require('probot-commands')
 // Ours
 const ensure = require('./lib/ensure')
 const test = require('./lib/test')
+const update = require('./lib/update')
 
 module.exports = robot => {
   // Ensures all dependencies are resolved before the PR can be merged
@@ -17,4 +18,10 @@ module.exports = robot => {
   robot.on('pull_request.opened', test)
   robot.on('pull_request.reopened', test)
   robot.on('pull_request.synchronize', test)
+
+  // Re-check on dependency updates
+  robot.on('issues.closed', update)
+  robot.on('issues.reopened', update)
+  robot.on('pull_request.reopened', update)
+  robot.on('pull_request.closed', update)
 }
