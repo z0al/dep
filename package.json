@@ -24,6 +24,7 @@
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
     "localtunnel": "^1.8.2",
+    "now": "^8.4.0",
     "prettier-standard": "^7.0.3"
   },
   "engines": {
