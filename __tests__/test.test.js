@@ -46,25 +46,3 @@ test('getting stored metadata', async () => {
 
   expect(metadata().get).toHaveBeenCalledTimes(3)
 })
-
-test('getting issue states', async () => {
-  await robot.receive(events.pull_request_opened)
-
-  expect(github.issues.get).toHaveBeenCalledWith(
-    expect.objectContaining({ number: expect.any(Number) })
-  )
-  expect(github.issues.get).toHaveBeenCalledTimes(3)
-})
-
-test('reporting', async () => {
-  await robot.receive(events.pull_request_opened)
-
-  expect(report).toHaveBeenLastCalledWith(
-    expect.any(Object),
-    expect.any(String),
-    expect.any(String),
-    expect.any(String),
-    'failure',
-    [2, 3]
-  )
-})
