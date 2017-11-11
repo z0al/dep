@@ -55,7 +55,7 @@ test('adding metadata', async () => {
   expect(metadata().set).toBeCalledWith('dependencies', expect.any(Array))
 })
 
-test('adding marker', async () => {
+test('adding the marker', async () => {
   await robot.receive(events.pr_comment_created)
   expect(github.issues.addLabels).toBeCalledWith(
     expect.objectContaining({
@@ -67,7 +67,7 @@ test('adding marker', async () => {
   )
 })
 
-test('removing marker', async () => {
+test('removing the marker', async () => {
   await robot.receive(events.pr_comment_created_remove)
   expect(github.issues.removeLabel).toBeCalled()
   expect(github.issues.addLabels).not.toBeCalled()
