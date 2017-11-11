@@ -23,11 +23,23 @@ beforeEach(() => {
     issues: {
       addLabels: jest.fn(),
       removeLabel: jest.fn()
+    },
+    repos: {
+      reviewUserPermissionLevel: jest
+        .fn()
+        .mockReturnValue({ data: { permission: 'write' } })
     }
   }
 
   // Passes the mocked out GitHub API into out robot instance
   robot.auth = () => Promise.resolve(github)
+})
+
+test('checking permission', async () => {
+  await robot.receive(events.pr_comment_created)
+  expect(github.repos.reviewUserPermissionLevel).toBeCalledWith(
+    expect.objectContaining({ username: 'user' })
+  )
 })
 
 test('processing plain issue comments', async () => {
