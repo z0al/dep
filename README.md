@@ -5,6 +5,7 @@
 # Dep
 
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
   <img src="./docs/logo.png" width="256" height="256" alt="bot logo">
@@ -24,6 +25,14 @@ npm install
 npm start
 ```
 
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --><!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
 ## Deployment
 
 See [docs/deploy.md](./docs/deploy.md) if you would like to run your own instance of this app.
@@ -41,3 +50,4 @@ Special thanks to [Jason Etcovitch](https://github.com/JasonEtco) for their help
 ## License
 
 MIT © [Ahmed T. Ali](https://github.com/ahmed-taj)
+
