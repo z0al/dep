@@ -1,10 +1,13 @@
 {
   "event": "pull_request",
   "payload": {
-    "action": "closed",
+    "action": "synchronize",
     "pull_request": {
       "number": 1,
-      "state": "closed"
+      "state": "open",
+      "head": {
+        "sha": "123"
+      }
     },
     "repository": {
       "name": "test",

@@ -1,7 +1,7 @@
 {
   "event": "pull_request",
   "payload": {
-    "action": "reopened",
+    "action": "opened",
     "pull_request": {
       "number": 1,
       "state": "open",
