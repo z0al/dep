@@ -22,7 +22,7 @@ test('sending success status', async () => {
     expect.objectContaining({
       sha: '123',
       state: 'success',
-      description: expect.stringMatching(/Ready/)
+      description: expect.stringMatching(/resolved/)
     })
   )
 })
