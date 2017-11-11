@@ -15,15 +15,40 @@
 
 A dependency manager for your Pull Requests.
 
+## Usage
+
+1. Browse to [GitHub Apps - dep][apps]
+2. Accept the permissions
+3. Allow access to repositories
+
+On the next pull request, a status check from `dep` will appear:
+
+![status-check-screenshot][]
+
+For best results, enable branch protection (in the repository's settings) and require the `dep` status check to pass before merging:
+
+![branch-protection-screenshot][]
+
+[apps]: https://github.com/apps/dep
+[status-check-screenshot]: docs/status.png
+[branch-protection-screenshot]: docs/settings.png
+
 ## Development
 
-```
-# Install dependencies
-npm install
+1. Setup the repo:
 
-# Run the bot
-npm start
+```shell
+git clone https://github.com/ahmed-taj/dep.git
+cd dep
+npm install
 ```
+
+2. Create your own [GitHub app][]
+3. Store the private key as `private-key.pem` somewhere safe, and point to its location in `.env`
+4. Start the app with `APP_ID=1234 npm start` where `1234` is your GitHub app's ID
+5. Update your GitHub app's Webhook URL to your localtunnel.me URL
+
+[GitHub app]: https://probot.github.io/docs/development/#configure-a-github-app
 
 ## Contributors
 
