@@ -6,9 +6,9 @@
 
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
 
-<center>
+<p align="center">
   <img src="./docs/logo.png" width="256" height="256" alt="bot logo">
-</center>
+</p>
 
 > built with [probot](https://github.com/probot/probot) framework
 
