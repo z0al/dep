@@ -68,7 +68,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 ## Deployment
 
-See [docs/deploy.md](./docs/deploy.md) if you would like to run your own instance of this app.
+This app is deployed on free (and single) [Now](https://now.sh) instance which isn't not suitable for real-world usage, you may need to deploy your own instance of the app. See [docs/deploy.md](./docs/deploy.md) for more info.
 
 ## Like it?
 
