@@ -21,7 +21,11 @@ A dependency manager for your Pull Requests.
 2. Accept the permissions
 3. Allow access to repositories
 
-On the next pull request, a status check from `dep` will appear:
+If you want to update a pull request dependencies write:
+
+![comment-screenshot][]
+
+On the pull request, a status check from `dep` will appear:
 
 ![status-check-screenshot][]
 
@@ -30,8 +34,9 @@ For best results, enable branch protection (in the repository's settings) and re
 ![branch-protection-screenshot][]
 
 [apps]: https://github.com/apps/dep
-[status-check-screenshot]: docs/status.png
-[branch-protection-screenshot]: docs/settings.png
+[status-check-screenshot]: ./docs/status.png
+[comment-screenshot]: ./docs/comment.png
+[branch-protection-screenshot]: ./docs/settings.png
 
 ## Development
 
