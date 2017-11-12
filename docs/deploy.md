@@ -4,4 +4,10 @@ If you would like to run your own instance of this app, see the [docs for deploy
 
 This app requires these **Permissions & events** for the GitHub App:
 
-> **TODO**: List permissions required for deployment here. See [probot/stale](https://github.com/probot/stale/blob/master/docs/deploy.md) for an example.
+- Issues - **Read & Write**
+  - [x] Check the box for **Issue comment** events
+  - [x] Check the box for **Issues** events
+- Pull requests - **Read & Write**
+  - [x] Check the box for **Pull request** events
+- Repository administration **Read-only**
+- Organization members **Read-only**
