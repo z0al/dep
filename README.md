@@ -8,7 +8,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
-  <img src="./docs/logo.png" width="256" height="256" alt="bot logo">
+  <img src="./docs/assets/logo.png" width="256" height="256" alt="bot logo">
 </p>
 
 > built with [probot](https://github.com/probot/probot) framework
@@ -34,9 +34,9 @@ For best results, enable branch protection (in the repository's settings) and re
 ![branch-protection-screenshot][]
 
 [apps]: https://github.com/apps/dep
-[status-check-screenshot]: ./docs/status.png
-[comment-screenshot]: ./docs/comment.png
-[branch-protection-screenshot]: ./docs/settings.png
+[status-check-screenshot]: ./docs/assets/status.png
+[comment-screenshot]: ./docs/assets/comment.png
+[branch-protection-screenshot]: ./docs/assets/settings.png
 
 ## Development
 
