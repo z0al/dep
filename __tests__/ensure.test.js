@@ -1,9 +1,12 @@
+jest.mock('../lib/check')
+
 // Packages
 const metadata = require('probot-metadata')
 const { createRobot } = require('probot')
 
 // Ours
 const app = require('../index')
+const check = require('../lib/check')
 const events = require('./events')
 
 // Globals
@@ -23,6 +26,9 @@ beforeEach(() => {
     issues: {
       addLabels: jest.fn(),
       removeLabel: jest.fn()
+    },
+    pullRequests: {
+      get: jest.fn().mockReturnValue({ data: { head: { sha: '123' } } })
     },
     repos: {
       reviewUserPermissionLevel: jest
@@ -71,4 +77,24 @@ test('removing the marker', async () => {
   await robot.receive(events.pr_comment_created_remove)
   expect(github.issues.removeLabel).toBeCalled()
   expect(github.issues.addLabels).not.toBeCalled()
+})
+
+test('running check after the update', async () => {
+  await robot.receive(events.pr_comment_created)
+  expect(check).toHaveBeenCalledWith(
+    expect.any(Object),
+    'user',
+    'test',
+    '123',
+    [1, 2]
+  )
+
+  await robot.receive(events.pr_comment_created_remove)
+  expect(check).toHaveBeenLastCalledWith(
+    expect.any(Object),
+    'user',
+    'test',
+    '123',
+    []
+  )
 })
