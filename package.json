@@ -8,8 +8,6 @@
   "scripts": {
     "format": "prettier-standard '**/*.js'",
     "precommit": "lint-staged",
-    "now": "now",
-    "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY | base64 -d) npm start",
     "start": "probot run ./index.js",
     "test": "jest"
   },
@@ -24,12 +22,11 @@
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
     "localtunnel": "^1.8.2",
-    "now": "^8.4.0",
     "prettier-standard": "^7.0.3"
   },
   "engines": {
-    "node": ">= 8",
-    "npm": ">= 5"
+    "node": "8.x",
+    "npm": "5.x"
   },
   "lint-staged": {
     "*.js": ["prettier-standard", "git add"],

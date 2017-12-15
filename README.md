@@ -49,22 +49,25 @@ npm install
 4. Start the app with `APP_ID=1234 npm start` where `1234` is your GitHub app's ID
 5. Update your GitHub app's Webhook URL to your localtunnel.me URL
 
-[GitHub app]: https://probot.github.io/docs/development/#configure-a-github-app
+[github app]: https://probot.github.io/docs/development/#configure-a-github-app
 
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 | [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-ahmed-taj "Blogposts") [💻](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Code") [📖](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Documentation") [⚠️](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Tests") | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco "Answering Questions") [🤔](#ideas-JasonEtco "Ideas, Planning, & Feedback") |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 ## Deployment
 
-This app is deployed on free (and single) [Now](https://now.sh) instance which isn't not suitable for real-world usage, you may need to deploy your own instance of the app. See [docs/deploy.md](./docs/deploy.md) for more info.
+See [docs/deploy.md](./docs/deploy.md) for more info.
 
 ## Like it?
 
@@ -79,4 +82,3 @@ Special thanks to [Jason Etcovitch](https://github.com/JasonEtco) for their help
 ## License
 
 MIT © [Ahmed T. Ali](https://github.com/ahmed-taj)
-
