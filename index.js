@@ -1,3 +1,6 @@
+// Native
+const { join } = require('path')
+
 // Packages
 const command = require('probot-commands')
 
@@ -24,4 +27,12 @@ module.exports = robot => {
   robot.on('issues.reopened', update)
   robot.on('pull_request.reopened', update)
   robot.on('pull_request.closed', update)
+
+  // Get an express router to expose new HTTP endpoints
+  const app = robot.route('/')
+
+  // Index page
+  app.get('/', (req, res) => {
+    res.sendFile(join(__dirname, 'index.html'))
+  })
 }

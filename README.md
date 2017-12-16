@@ -1,4 +1,4 @@
-# Dep
+# DEP
 
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
@@ -9,11 +9,11 @@
 
 > built with [probot](https://github.com/probot/probot) framework
 
-A dependency manager for your Pull Requests.
+A dependency manager for Pull Requests.
 
 ## Usage
 
-1. Browse to [GitHub Apps - dep][apps]
+1. Browse to [GitHub Apps - DEP][apps]
 2. Accept the permissions
 3. Allow access to repositories
 
@@ -21,11 +21,11 @@ If you want to update a pull request dependencies write:
 
 ![comment-screenshot][]
 
-On the pull request, a status check from `dep` will appear:
+On the pull request, a status check from `DEP` will appear:
 
 ![status-check-screenshot][]
 
-For best results, enable branch protection (in the repository's settings) and require the `dep` status check to pass before merging:
+For best results, enable branch protection (in the repository's settings) and require the `DEP` status check to pass before merging:
 
 ![branch-protection-screenshot][]
 
