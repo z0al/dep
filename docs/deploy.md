@@ -9,5 +9,6 @@ This app requires these **Permissions & events** for the GitHub App:
   * [x] Check the box for **Issues** events
 * Pull requests - **Read & Write**
   * [x] Check the box for **Pull request** events
+* Commit statuses - **Read & Write**
 * Repository administration **Read-only**
 * Organization members **Read-only**
