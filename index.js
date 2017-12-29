@@ -3,6 +3,7 @@ const { join } = require('path')
 
 // Packages
 const command = require('probot-commands')
+const { addCommand } = require('probot-issue-commands')
 
 // Ours
 const ensure = require('./lib/ensure')
@@ -10,10 +11,10 @@ const test = require('./lib/test')
 const update = require('./lib/update')
 
 module.exports = robot => {
-  // Ensures all dependencies are resolved before the PR can be merged
-  //
-  // Triggered when you write:
-  //    /COMMAND arguments
+  // The new syntax (#3)
+  addCommand(robot, /depend(s|ed|ing)?( +on)?/, ensure)
+
+  // Depreated!
   command(robot, 'depends', ensure)
   command(robot, 'ensure', ensure)
 

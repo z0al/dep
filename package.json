@@ -14,6 +14,7 @@
   "dependencies": {
     "probot": "^3.0.0",
     "probot-commands": "^1.0.0",
+    "probot-issue-commands": "^1.0.2",
     "probot-metadata": "^1.0.0"
   },
   "devDependencies": {
