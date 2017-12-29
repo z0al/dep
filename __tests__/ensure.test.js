@@ -41,28 +41,60 @@ beforeEach(() => {
   robot.auth = () => Promise.resolve(github)
 })
 
-test('checking permission', async () => {
-  await robot.receive(events.pr_comment_created)
+test('checking permission (old synatx)', async () => {
+  await robot.receive(events.pr_comment_created_old)
   expect(github.repos.reviewUserPermissionLevel).toBeCalledWith(
     expect.objectContaining({ username: 'user' })
   )
 })
 
-test('processing plain issue comments', async () => {
-  await robot.receive(events.issue_comment_created)
+test('checking permission (new syntax)', async () => {
+  await robot.receive(events.pr_comment_created_new)
+  expect(github.repos.reviewUserPermissionLevel).toBeCalledWith(
+    expect.objectContaining({ username: 'user' })
+  )
+})
+
+test('processing plain issue comments (old syntax)', async () => {
+  await robot.receive(events.issue_comment_created_old)
   expect(github.issues.addLabels).not.toBeCalled()
 })
 
-test('adding metadata', async () => {
-  await robot.receive(events.pr_comment_created)
+test('processing plain issue comments (new syntax)', async () => {
+  await robot.receive(events.issue_comment_created_new)
+  expect(github.issues.addLabels).not.toBeCalled()
+})
+
+test('adding metadata (old syntax)', async () => {
+  await robot.receive(events.pr_comment_created_old)
   expect(metadata).toBeCalledWith(
     expect.objectContaining({ payload: expect.any(Object) })
   )
   expect(metadata().set).toBeCalledWith('dependencies', expect.any(Array))
 })
 
-test('adding the marker', async () => {
-  await robot.receive(events.pr_comment_created)
+test('adding metadata (new syntax)', async () => {
+  await robot.receive(events.pr_comment_created_new)
+  expect(metadata).toBeCalledWith(
+    expect.objectContaining({ payload: expect.any(Object) })
+  )
+  expect(metadata().set).toBeCalledWith('dependencies', expect.any(Array))
+})
+
+test('adding the marker (old syntax)', async () => {
+  await robot.receive(events.pr_comment_created_old)
+  expect(github.issues.addLabels).toBeCalledWith(
+    expect.objectContaining({
+      owner: 'user',
+      repo: 'test',
+      number: 1,
+      labels: expect.any(Array)
+    })
+  )
+})
+
+test('adding the marker (new syntax)', async () => {
+  await robot.receive(events.pr_comment_created_new)
   expect(github.issues.addLabels).toBeCalledWith(
     expect.objectContaining({
       owner: 'user',
@@ -80,8 +112,17 @@ test('removing the marker', async () => {
 })
 
 test('running check after the update', async () => {
-  await robot.receive(events.pr_comment_created)
+  await robot.receive(events.pr_comment_created_old)
   expect(check).toHaveBeenCalledWith(
+    expect.any(Object),
+    'user',
+    'test',
+    '123',
+    [1, 2]
+  )
+
+  await robot.receive(events.pr_comment_created_new)
+  expect(check).toHaveBeenLastCalledWith(
     expect.any(Object),
     'user',
     'test',
