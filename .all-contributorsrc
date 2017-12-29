@@ -28,6 +28,16 @@
         "question",
         "ideas"
       ]
+    },
+    {
+      "login": "ryanhiebert",
+      "name": "Ryan Hiebert",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/425099?v=4",
+      "profile": "http://ryanhiebert.com",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
     }
   ]
 }
