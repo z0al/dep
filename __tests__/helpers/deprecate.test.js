@@ -20,8 +20,6 @@ beforeEach(() => {
   // Mock GitHub client
   github = {
     issues: {
-      addLabels: jest.fn(),
-      removeLabel: jest.fn(),
       createComment: jest.fn()
     }
   }
