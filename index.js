@@ -6,18 +6,17 @@ const command = require('probot-commands')
 
 // Ours
 const deprecate = require('./lib/helpers/deprecate')
-const test = require('./lib/test')
+const toggle = require('./lib/toggle')
 const update = require('./lib/update')
 
 module.exports = robot => {
-  // Depreacted!
+  // Deprecated!
   command(robot, 'depends', deprecate)
   command(robot, 'ensure', deprecate)
 
-  // Run tests when a PR has changed
-  robot.on('pull_request.opened', test)
-  robot.on('pull_request.reopened', test)
-  robot.on('pull_request.synchronize', test)
+  // Toggle label
+  robot.on('pull_request.opened', toggle)
+  robot.on('pull_request.edited', toggle)
 
   // Re-check on dependency updates
   robot.on('issues.closed', update)
