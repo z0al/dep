@@ -5,6 +5,7 @@
     "pull_request": {
       "number": 1,
       "state": "close",
+      "body": "test body",
       "head": {
         "sha": "123"
       }
