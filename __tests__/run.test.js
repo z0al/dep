@@ -1,10 +1,11 @@
 jest.mock('../lib/report')
+
 // Ours
-const check = require('../lib/check')
+const run = require('../lib/run')
 const report = require('../lib/report')
 
 // Globals
-let github, owner, repo, sha, deps
+let github, repo, sha, deps
 
 // Mock everything
 beforeEach(() => {
@@ -27,7 +28,7 @@ beforeEach(() => {
 })
 
 test('getting issue states', async () => {
-  await check(github, owner, repo, sha, deps)
+  await run(github, repo, sha, deps)
 
   expect(github.issues.get).toHaveBeenCalledWith(
     expect.objectContaining({ number: expect.any(Number) })
@@ -36,11 +37,10 @@ test('getting issue states', async () => {
 })
 
 test('reporting', async () => {
-  await check(github, owner, repo, sha, deps)
+  await run(github, repo, sha, deps)
 
   expect(report).toHaveBeenLastCalledWith(
     expect.any(Object),
-    expect.any(String),
     expect.any(String),
     expect.any(String),
     'failure',
