@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "all-contributors-cli": "^4.8.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
