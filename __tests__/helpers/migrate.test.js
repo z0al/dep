@@ -17,7 +17,7 @@ const number = 1
 beforeEach(() => {
   // Mock GitHub client
   context = {
-    payload: events.pull_request_synchronize.payload,
+    payload: events.pull_request_opened.payload,
     repo: () => ({ owner, repo }),
     github: { issues: { edit: jest.fn() } }
   }

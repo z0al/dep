@@ -9,6 +9,5 @@ module.exports = {
   pull_request_opened: require('./pull_request.opened.json'),
   pull_request_edited: require('./pull_request.edited.json'),
   pull_request_reopened: require('./pull_request.reopened.json'),
-  pull_request_closed: require('./pull_request.closed.json'),
-  pull_request_synchronize: require('./pull_request.synchronize.json')
+  pull_request_closed: require('./pull_request.closed.json')
 }
