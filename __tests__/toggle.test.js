@@ -1,3 +1,5 @@
+jest.mock('../lib/run')
+
 // Packages
 const { createRobot } = require('probot')
 
@@ -5,6 +7,7 @@ const { createRobot } = require('probot')
 const app = require('../index')
 const events = require('./events')
 const toggle = require('../lib/toggle')
+const run = require('../lib/run')
 
 // Globals
 let robot, github
@@ -39,4 +42,14 @@ test('remove the label if there are no dependencies', async () => {
   await robot.receive(events.pull_request_opened)
   expect(github.issues.addLabels).not.toHaveBeenCalled()
   expect(github.issues.removeLabel).toHaveBeenCalled()
+})
+
+test('run checks', async () => {
+  await robot.receive(events.pull_request_opened)
+  expect(run).toHaveBeenCalledWith(
+    expect.any(Object),
+    expect.objectContaining({ repo: 'test', owner: 'user' }),
+    '123',
+    []
+  )
 })
