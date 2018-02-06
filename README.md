@@ -9,7 +9,7 @@
 
 > built with [probot](https://github.com/probot/probot) framework
 
-A Github App help managing pull request dependencies. That App works similar to typical CI services ( e.g [Travis](https://travis-ci.org)) but instead of running a test suite, It will check whether a pull request dependencies are resolved.
+A Github App that helps managing pull request dependencies. That App works similar to typical CI services ( e.g [Travis](https://travis-ci.org)) but instead of running a test suite, It will check whether a pull request dependencies are resolved.
 
 A dependency can be either an issue or another pull request. A dependency is considered resolved if its state has changed to `closed`.
 
@@ -20,6 +20,7 @@ A dependency can be either an issue or another pull request. A dependency is con
 3. Allow access to repositories
 
 ## Screenshots
+
 If you want to update a pull request dependencies write e.g:
 
 ![comment-screenshot][]
@@ -82,7 +83,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
-| [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-ahmed-taj "Blogposts") [💻](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Code") [📖](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Documentation") [⚠️](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Tests") | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco "Answering Questions") [🤔](#ideas-JasonEtco "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/425099?v=4" width="100px;"/><br /><sub><b>Ryan Hiebert</b></sub>](http://ryanhiebert.com)<br />[📖](https://github.com/ahmed-taj/dep/commits?author=ryanhiebert "Documentation") [🤔](#ideas-ryanhiebert "Ideas, Planning, & Feedback") |
+| [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-ahmed-taj 'Blogposts') [💻](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj 'Code') [📖](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj 'Documentation') [⚠️](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj 'Tests') | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco 'Answering Questions') [🤔](#ideas-JasonEtco 'Ideas, Planning, & Feedback') | [<img src="https://avatars2.githubusercontent.com/u/425099?v=4" width="100px;"/><br /><sub><b>Ryan Hiebert</b></sub>](http://ryanhiebert.com)<br />[📖](https://github.com/ahmed-taj/dep/commits?author=ryanhiebert 'Documentation') [🤔](#ideas-ryanhiebert 'Ideas, Planning, & Feedback') |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 
