@@ -9,7 +9,9 @@
 
 > built with [probot](https://github.com/probot/probot) framework
 
-A dependency manager for Pull Requests.
+A Github App help managing pull request dependencies. That App works similar to typical CI services ( e.g [Travis](https://travis-ci.org)) but instead of running a test suite, It will check whether a pull request dependencies are resolved.
+
+A dependency can be either an issue or another pull request. A dependency is considered resolved if its state has changed to `closed`.
 
 ## Usage
 
@@ -17,11 +19,12 @@ A dependency manager for Pull Requests.
 2. Accept the permissions
 3. Allow access to repositories
 
-If you want to update a pull request dependencies write:
+## Screenshots
+If you want to update a pull request dependencies write e.g:
 
 ![comment-screenshot][]
 
-On the pull request, a status check from `DEP` will appear:
+On the pull request, a status check from `DEP` will appear e.g:
 
 ![status-check-screenshot][]
 
@@ -33,6 +36,28 @@ For best results, enable branch protection (in the repository's settings) and re
 [status-check-screenshot]: ./docs/assets/status.png
 [comment-screenshot]: ./docs/assets/comment.png
 [branch-protection-screenshot]: ./docs/assets/settings.png
+
+## New syntax?
+
+We've deprecated the \`/depends\` and \`/ensure\` commands in favor of the new single inline command: \`depend\` (no slash). The new command works similar to how you may [close issues using keywords][ref] on GitHub but **only** in pull request description.
+
+The following keywords followed by an issue number, will mark that issue as dependency:
+
+* depend on
+* depends on
+* depended on
+
+**Examples**
+
+You may write the end of PR description:
+
+> Depends on #&#8203;1
+
+or it can be anywhere:
+
+> This pull request **depends on #&#8203;1** which does bla bla bla. Oh, and it **depends on #&#8203;2** too.
+
+All dependencies added using the old commands should have already been converted to the new syntax for you (hopefully), but in case that didn't happen, you need to modify the description to include your dependencies by yourself. The old commands will just write a deprecation notice.
 
 ## Development
 
