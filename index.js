@@ -5,22 +5,18 @@ const { join } = require('path')
 const command = require('probot-commands')
 
 // Ours
-const ensure = require('./lib/ensure')
-const test = require('./lib/test')
+const deprecate = require('./lib/helpers/deprecate')
+const toggle = require('./lib/toggle')
 const update = require('./lib/update')
 
 module.exports = robot => {
-  // Ensures all dependencies are resolved before the PR can be merged
-  //
-  // Triggered when you write:
-  //    /COMMAND arguments
-  command(robot, 'depends', ensure)
-  command(robot, 'ensure', ensure)
+  // Deprecated!
+  command(robot, 'depends', deprecate)
+  command(robot, 'ensure', deprecate)
 
-  // Run tests when a PR has changed
-  robot.on('pull_request.opened', test)
-  robot.on('pull_request.reopened', test)
-  robot.on('pull_request.synchronize', test)
+  // Toggle label
+  robot.on('pull_request.opened', toggle)
+  robot.on('pull_request.edited', toggle)
 
   // Re-check on dependency updates
   robot.on('issues.closed', update)

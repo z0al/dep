@@ -56,4 +56,6 @@ typings/
 
 # dotenv environment variables file
 .env
-TODO.md
+
+# Git todos (git.io/todos)
+.todos.yml

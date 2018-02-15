@@ -1,10 +1,11 @@
 {
   "event": "pull_request",
   "payload": {
-    "action": "synchronize",
+    "action": "edited",
     "pull_request": {
       "number": 1,
       "state": "open",
+      "body": "depends on #1 and depends on #2",
       "head": {
         "sha": "123"
       }

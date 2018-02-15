@@ -1,10 +1,11 @@
 {
   "event": "pull_request",
   "payload": {
-    "action": "opened",
+    "action": "closed",
     "pull_request": {
       "number": 1,
-      "state": "open",
+      "state": "close",
+      "body": "test body",
       "head": {
         "sha": "123"
       }
