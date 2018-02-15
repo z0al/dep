@@ -1,5 +1,7 @@
 # DEP
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/dep.svg)](https://greenkeeper.io/)
+
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 

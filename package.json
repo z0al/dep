@@ -20,10 +20,10 @@
     "all-contributors-cli": "^4.8.1",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
-    "jest": "^21.2.1",
-    "lint-staged": "^4.3.0",
+    "jest": "^22.2.2",
+    "lint-staged": "^6.1.0",
     "localtunnel": "^1.8.2",
-    "prettier-standard": "^7.0.3",
+    "prettier-standard": "^8.0.0",
     "smee-client": "^1.0.1"
   },
   "engines": {
