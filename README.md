@@ -3,7 +3,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/dep.svg)](https://greenkeeper.io/)
 
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
   <img src="./docs/assets/logo.png" width="256" height="256" alt="bot logo">
@@ -85,9 +85,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
-| [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-ahmed-taj 'Blogposts') [💻](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj 'Code') [📖](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj 'Documentation') [⚠️](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj 'Tests') | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco 'Answering Questions') [🤔](#ideas-JasonEtco 'Ideas, Planning, & Feedback') | [<img src="https://avatars2.githubusercontent.com/u/425099?v=4" width="100px;"/><br /><sub><b>Ryan Hiebert</b></sub>](http://ryanhiebert.com)<br />[📖](https://github.com/ahmed-taj/dep/commits?author=ryanhiebert 'Documentation') [🤔](#ideas-ryanhiebert 'Ideas, Planning, & Feedback') |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-
+<!-- prettier-ignore -->
+| [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-ahmed-taj "Blogposts") [💻](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Code") [📖](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Documentation") [⚠️](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Tests") | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco "Answering Questions") [🤔](#ideas-JasonEtco "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/425099?v=4" width="100px;"/><br /><sub><b>Ryan Hiebert</b></sub>](http://ryanhiebert.com)<br />[📖](https://github.com/ahmed-taj/dep/commits?author=ryanhiebert "Documentation") [🤔](#ideas-ryanhiebert "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/24373707?v=4" width="100px;"/><br /><sub><b>Rohit Sarkar</b></sub>](https://github.com/rsarky)<br />[💻](https://github.com/ahmed-taj/dep/commits?author=rsarky "Code") |
+| :---: | :---: | :---: | :---: |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
