@@ -1,9 +1,8 @@
 # DEP
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/dep.svg)](https://greenkeeper.io/)
-
 [![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/dep.svg)](https://greenkeeper.io/)
 
 <p align="center">
   <img src="./docs/assets/logo.png" width="256" height="256" alt="bot logo">
@@ -97,9 +96,10 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 See [docs/deploy.md](./docs/deploy.md) for more info.
 
-## Like it?
+## You might also like
 
-Give it a star(:star:) :point_up_2:
+* **[commitlint-bot](https://github.com/ahmed-taj/commitlint-bot):** A GitHub App that runs commitlint for you!
+* **[Review Me](https://github.com/ahmed-taj/probot-review-me):** A GitHub App that helps you to decide when a pull request is ready for review based on its statuses.
 
 ## Credits
 
