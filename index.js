@@ -23,6 +23,7 @@ module.exports = robot => {
   robot.on('issues.reopened', update)
   robot.on('pull_request.reopened', update)
   robot.on('pull_request.closed', update)
+  robot.on('pull_request.synchronize', update)
 
   // Get an express router to expose new HTTP endpoints
   const app = robot.route('/')
