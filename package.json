@@ -4,7 +4,7 @@
   "description": "A dependency manager for your Pull Requests",
   "author": "Ahmed T. Ali <ah.tajelsir@gmail.com> (ahmed.sd)",
   "license": "MIT",
-  "repository": "https://github.com/ahmed-taj/dep.git",
+  "repository": "https://github.com/z0al/dep.git",
   "scripts": {
     "format": "prettier-standard '**/*.js'",
     "precommit": "lint-staged",
@@ -25,10 +25,6 @@
     "lint-staged": "^7.0.0",
     "prettier-standard": "^8.0.0",
     "smee-client": "^1.0.1"
-  },
-  "engines": {
-    "node": "8.x",
-    "npm": "5.x"
   },
   "lint-staged": {
     "*.js": ["prettier-standard", "git add"],

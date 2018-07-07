@@ -1,8 +1,8 @@
 # DEP
 
-[![Travis](https://img.shields.io/travis/ahmed-taj/dep.svg)](https://travis-ci.org/ahmed-taj/dep)
+[![Travis](https://img.shields.io/travis/z0al/dep.svg)](https://travis-ci.org/z0al/dep)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/dep.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/z0al/dep.svg)](https://greenkeeper.io/)
 
 <p align="center">
   <img src="./docs/assets/logo.png" width="256" height="256" alt="bot logo">
@@ -16,9 +16,9 @@ A dependency can be either an issue or another pull request. A dependency is con
 
 ## Usage
 
-1. Browse to [GitHub Apps - DEP][apps]
-2. Accept the permissions
-3. Allow access to repositories
+1.  Browse to [GitHub Apps - DEP][apps]
+2.  Accept the permissions
+3.  Allow access to repositories
 
 ## Screenshots
 
@@ -45,9 +45,9 @@ We've deprecated the \`/depends\` and \`/ensure\` commands in favor of the new s
 
 The following keywords followed by an issue number, will mark that issue as dependency:
 
-* depend on
-* depends on
-* depended on
+- depend on
+- depends on
+- depended on
 
 **Examples**
 
@@ -63,18 +63,18 @@ All dependencies added using the old commands should have already been converted
 
 ## Development
 
-1. Setup the repo:
+1.  Setup the repo:
 
 ```shell
-git clone https://github.com/ahmed-taj/dep.git
+git clone https://github.com/z0al/dep.git
 cd dep
 npm install
 ```
 
-2. Create your own [GitHub app][]
-3. Store the private key as `private-key.pem` somewhere safe, and point to its location in `.env`
-4. Start the app with `APP_ID=1234 npm start` where `1234` is your GitHub app's ID
-5. Update your GitHub app's Webhook URL to your localtunnel.me URL
+2.  Create your own [GitHub app][]
+3.  Store the private key as `private-key.pem` somewhere safe, and point to its location in `.env`
+4.  Start the app with `APP_ID=1234 npm start` where `1234` is your GitHub app's ID
+5.  Update your GitHub app's Webhook URL to your localtunnel.me URL
 
 [github app]: https://probot.github.io/docs/development/#configure-a-github-app
 
@@ -85,7 +85,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-ahmed-taj "Blogposts") [💻](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Code") [📖](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Documentation") [⚠️](https://github.com/ahmed-taj/dep/commits?author=ahmed-taj "Tests") | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco "Answering Questions") [🤔](#ideas-JasonEtco "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/425099?v=4" width="100px;"/><br /><sub><b>Ryan Hiebert</b></sub>](http://ryanhiebert.com)<br />[📖](https://github.com/ahmed-taj/dep/commits?author=ryanhiebert "Documentation") [🤔](#ideas-ryanhiebert "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/24373707?v=4" width="100px;"/><br /><sub><b>Rohit Sarkar</b></sub>](https://github.com/rsarky)<br />[💻](https://github.com/ahmed-taj/dep/commits?author=rsarky "Code") |
+| [<img src="https://avatars1.githubusercontent.com/u/12673605?v=4" width="100px;"/><br /><sub><b>Ahmed T. Ali</b></sub>](https://ahmed.sd)<br />[📝](#blog-z0al "Blogposts") [💻](https://github.com/z0al/dep/commits?author=z0al "Code") [📖](https://github.com/z0al/dep/commits?author=z0al "Documentation") [⚠️](https://github.com/z0al/dep/commits?author=z0al "Tests") | [<img src="https://avatars1.githubusercontent.com/u/10660468?v=4" width="100px;"/><br /><sub><b>Jason Etcovitch</b></sub>](https://jasonet.co)<br />[💬](#question-JasonEtco "Answering Questions") [🤔](#ideas-JasonEtco "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/425099?v=4" width="100px;"/><br /><sub><b>Ryan Hiebert</b></sub>](http://ryanhiebert.com)<br />[📖](https://github.com/z0al/dep/commits?author=ryanhiebert "Documentation") [🤔](#ideas-ryanhiebert "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/24373707?v=4" width="100px;"/><br /><sub><b>Rohit Sarkar</b></sub>](https://github.com/rsarky)<br />[💻](https://github.com/z0al/dep/commits?author=rsarky "Code") |
 | :---: | :---: | :---: | :---: |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
@@ -98,15 +98,15 @@ See [docs/deploy.md](./docs/deploy.md) for more info.
 
 ## You might also like
 
-* **[commitlint-bot](https://github.com/ahmed-taj/commitlint-bot):** A GitHub App that runs commitlint for you!
-* **[Review Me](https://github.com/ahmed-taj/probot-review-me):** A GitHub App that helps you to decide when a pull request is ready for review based on its statuses.
+- **[commitlint-bot](https://github.com/z0al/commitlint-bot):** A GitHub App that runs commitlint for you!
+- **[Review Me](https://github.com/z0al/probot-review-me):** A GitHub App that helps you to decide when a pull request is ready for review based on its statuses.
 
 ## Credits
 
-The Logo is designed by [Freepik](https://www.freepik.com/free-vector/green-and-blue-retro-robots-collection_721192.htm). Modified by [Ahmed T. Ali](https://github.com/ahmed-taj).
+The Logo is designed by [Freepik](https://www.freepik.com/free-vector/green-and-blue-retro-robots-collection_721192.htm). Modified by [Ahmed T. Ali](https://github.com/z0al).
 
 Special thanks to [Jason Etcovitch](https://github.com/JasonEtco) for their help, including the original bot idea.
 
 ## License
 
-MIT © [Ahmed T. Ali](https://github.com/ahmed-taj)
+MIT © [Ahmed T. Ali](https://github.com/z0al)
