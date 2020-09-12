@@ -1,0 +1,26 @@
+{
+	"name": "issue_comment",
+	"payload": {
+		"action": "created",
+		"issue": {
+			"number": 1,
+			"state": "open",
+			"pull_request": {}
+		},
+		"comment": {
+			"user": {
+				"login": "user"
+			},
+			"body": "/depends on nothing"
+		},
+		"repository": {
+			"name": "test",
+			"owner": {
+				"login": "user"
+			}
+		},
+		"installation": {
+			"id": 1234
+		}
+	}
+}

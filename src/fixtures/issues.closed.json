@@ -1,0 +1,19 @@
+{
+	"name": "issues",
+	"payload": {
+		"action": "closed",
+		"issue": {
+			"number": 1,
+			"state": "closed"
+		},
+		"repository": {
+			"name": "test",
+			"owner": {
+				"login": "user"
+			}
+		},
+		"installation": {
+			"id": 1234
+		}
+	}
+}

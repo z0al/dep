@@ -1,0 +1,23 @@
+{
+	"name": "pull_request",
+	"payload": {
+		"action": "closed",
+		"pull_request": {
+			"number": 1,
+			"state": "close",
+			"body": "test body",
+			"head": {
+				"sha": "123"
+			}
+		},
+		"repository": {
+			"name": "test",
+			"owner": {
+				"login": "user"
+			}
+		},
+		"installation": {
+			"id": 1234
+		}
+	}
+}

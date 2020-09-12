@@ -1,0 +1,23 @@
+{
+	"name": "pull_request",
+	"payload": {
+		"action": "edited",
+		"pull_request": {
+			"number": 1,
+			"state": "open",
+			"body": "depends on #1 and depends on #2",
+			"head": {
+				"sha": "123"
+			}
+		},
+		"repository": {
+			"name": "test",
+			"owner": {
+				"login": "user"
+			}
+		},
+		"installation": {
+			"id": 1234
+		}
+	}
+}

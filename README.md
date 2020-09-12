@@ -76,7 +76,7 @@ npm install
 4.  Start the app with `APP_ID=1234 npm start` where `1234` is your GitHub app's ID
 5.  Update your GitHub app's Webhook URL to your localtunnel.me URL
 
-[github app]: https://probot.github.io/docs/development/#configure-a-github-app
+[github app]: https://probot.github.io/docs/development/#configuring-a-github-app
 
 ## Contributors
 
@@ -93,7 +93,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 ## Deployment
 
-See [docs/deploy.md](./docs/deploy.md) for more info.
+Please refer to [Probot documentation](https://probot.github.io/docs/deployment/) on how to deploy your own App.
 
 ## You might also like
 
