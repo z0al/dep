@@ -1,3 +1,5 @@
+> **Disclaimer:** This bot has been deprecated and no longer maintained. Please use [Dependent Issues](https://github.com/z0al/dependent-issues) Action instead.
+
 # DEP
 
 [![Travis](https://img.shields.io/travis/z0al/dep.svg)](https://travis-ci.org/z0al/dep)
